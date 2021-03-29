@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>Cal_Matrix</class>
+ <widget class="QWidget" name="Cal_Matrix">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,21 +16,60 @@
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
     <rect>
-     <x>320</x>
+     <x>380</x>
      <y>20</y>
-     <width>411</width>
+     <width>321</width>
      <height>311</height>
     </rect>
    </property>
+   <column>
+    <property name="text">
+     <string>参数名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>等级</string>
+    </property>
+   </column>
   </widget>
-  <widget class="QSpinBox" name="spinBox">
+  <widget class="QPushButton" name="btnRes">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>50</y>
-     <width>42</width>
-     <height>22</height>
+     <x>130</x>
+     <y>210</y>
+     <width>111</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>计算可压性矩阵</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAppendRow">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加参数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDelRow">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除参数</string>
    </property>
   </widget>
  </widget>

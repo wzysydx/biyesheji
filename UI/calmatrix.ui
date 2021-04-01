@@ -6,71 +6,110 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>757</width>
-    <height>524</height>
+    <width>551</width>
+    <height>281</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>可压性矩阵计算</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QSplitter" name="splitter">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>20</y>
-     <width>321</width>
-     <height>311</height>
+     <x>40</x>
+     <y>50</y>
+     <width>471</width>
+     <height>192</height>
     </rect>
    </property>
-   <column>
-    <property name="text">
-     <string>参数名</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>等级</string>
-    </property>
-   </column>
-  </widget>
-  <widget class="QPushButton" name="btnRes">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>210</y>
-     <width>111</width>
-     <height>51</height>
-    </rect>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
-   <property name="text">
-    <string>计算可压性矩阵</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnAppendRow">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>70</y>
-     <width>111</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>添加参数</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnDelRow">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>140</y>
-     <width>111</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>删除参数</string>
-   </property>
+   <widget class="QWidget" name="">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btnInitData">
+         <property name="text">
+          <string>恢复默认参数</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="btnSetRows">
+           <property name="text">
+            <string>设置参数个数</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAppendRow">
+         <property name="text">
+          <string>添加参数</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnDelRow">
+         <property name="text">
+          <string>删除参数</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnRes">
+         <property name="text">
+          <string>计算权重</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btnAutoHeight">
+         <property name="text">
+          <string>自动高度</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAutoWidth">
+         <property name="text">
+          <string>自动宽度</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <column>
+     <property name="text">
+      <string>参数名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>等级</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>权重</string>
+     </property>
+    </column>
+   </widget>
   </widget>
  </widget>
  <resources/>

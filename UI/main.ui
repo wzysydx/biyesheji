@@ -151,7 +151,7 @@
   </action>
  </widget>
  <resources>
-  <include location="res_main.qrc"/>
+  <include location="res.qrc"/>
  </resources>
  <connections>
   <connection>
